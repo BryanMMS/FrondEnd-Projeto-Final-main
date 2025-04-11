@@ -17,7 +17,8 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductReadComponent } from './component/product/product-read/product-read.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
-
+import { SupplierReadComponent } from './component/supplier/supplier-read/supplier-read.component';
+import { SupplierCrudComponent } from './views/supplier-crud/supplier-crud.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,9 @@ import {HttpClientModule} from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     ProductCrudComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    SupplierReadComponent,
+    SupplierCrudComponent
    
   ],
   imports: [
@@ -44,3 +47,4 @@ import {HttpClientModule} from '@angular/common/http';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
