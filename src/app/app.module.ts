@@ -19,6 +19,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
 import { SupplierReadComponent } from './component/supplier/supplier-read/supplier-read.component';
 import { SupplierCrudComponent } from './views/supplier-crud/supplier-crud.component';
+import { PaymentMethodReadComponent } from './component/paymentMethod/payment-method-read/payment-method-read.component';
+import { PaymentMethodCrudComponent } from './views/payment-method-crud/payment-method-crud.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,9 @@ import { SupplierCrudComponent } from './views/supplier-crud/supplier-crud.compo
     ProductCrudComponent,
     ProductReadComponent,
     SupplierReadComponent,
-    SupplierCrudComponent
+    SupplierCrudComponent,
+    PaymentMethodReadComponent,
+    PaymentMethodCrudComponent
    
   ],
   imports: [
