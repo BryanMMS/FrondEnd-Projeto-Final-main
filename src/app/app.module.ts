@@ -26,6 +26,7 @@ import{MatFormFieldModule} from '@angular/material/form-field';
 import{MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { SupplierCreateComponent } from './component/supplier/supplier-create/supplier-create.component';
+import { PaymentMethodCreateComponent } from './component/paymentMethod/payment-method-create/payment-method-create.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SupplierCreateComponent } from './component/supplier/supplier-create/su
     PaymentMethodReadComponent,
     PaymentMethodCrudComponent,
     ProductCreateComponent,
-    SupplierCreateComponent
+    SupplierCreateComponent,
+    PaymentMethodCreateComponent
    
   ],
   imports: [

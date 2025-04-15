@@ -5,6 +5,8 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
 import { SupplierCreateComponent } from './component/supplier/supplier-create/supplier-create.component';
 import { SupplierCrudComponent } from './views/supplier-crud/supplier-crud.component';
+import { PaymentMethodCreateComponent } from './component/paymentMethod/payment-method-create/payment-method-create.component';
+import { PaymentMethodCrudComponent } from './views/payment-method-crud/payment-method-crud.component';
 
 const routes: Routes = [
   {
@@ -30,7 +32,18 @@ const routes: Routes = [
   {
     path: "suppliers/create",
     component: SupplierCreateComponent
+  },
+
+  {
+    path: "paymentMethods",
+    component: PaymentMethodCrudComponent
+  },
+
+  {
+    path: "paymentMethods/create",
+    component: PaymentMethodCreateComponent
   }
+
 
     
 ];
