@@ -21,6 +21,12 @@ import { SupplierReadComponent } from './component/supplier/supplier-read/suppli
 import { SupplierCrudComponent } from './views/supplier-crud/supplier-crud.component';
 import { PaymentMethodReadComponent } from './component/paymentMethod/payment-method-read/payment-method-read.component';
 import { PaymentMethodCrudComponent } from './views/payment-method-crud/payment-method-crud.component';
+import { ProductCreateComponent } from './component/product/product-create/product-create.component';
+import{MatFormFieldModule} from '@angular/material/form-field';
+import{MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { SupplierCreateComponent } from './component/supplier/supplier-create/supplier-create.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +39,9 @@ import { PaymentMethodCrudComponent } from './views/payment-method-crud/payment-
     SupplierReadComponent,
     SupplierCrudComponent,
     PaymentMethodReadComponent,
-    PaymentMethodCrudComponent
+    PaymentMethodCrudComponent,
+    ProductCreateComponent,
+    SupplierCreateComponent
    
   ],
   imports: [
@@ -45,7 +53,10 @@ import { PaymentMethodCrudComponent } from './views/payment-method-crud/payment-
     MatListModule,
     MatCardModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
