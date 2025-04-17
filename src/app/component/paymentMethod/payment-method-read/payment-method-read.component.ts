@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PaymentMethodService } from '../payment-method.service';
+import { PaymentMethod } from './paymentMethod.model';
 
 @Component({
   selector: 'app-payment-method-read',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./payment-method-read.component.css']
 })
 export class PaymentMethodReadComponent {
+  paymentMethods!: PaymentMethod[]; // Usando a interface PaymentMethod
+  displayedColumns = ['id', 'description', 'type', 'stats', 'action']; // Atualizando as colunas
 
+  constructor(private paymentMethodService: PaymentMethodService) { }
+
+  ngOnInit(): void {
+    this.paymentMethodService.read().subscribe(paymentMethods => {
+      this.paymentMethods = paymentMethods
+      console.log(paymentMethods)
+    });
+  }
 }

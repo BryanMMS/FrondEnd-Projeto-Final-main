@@ -27,6 +27,7 @@ import{MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { SupplierCreateComponent } from './component/supplier/supplier-create/supplier-create.component';
 import { PaymentMethodCreateComponent } from './component/paymentMethod/payment-method-create/payment-method-create.component';
+import{MatTableModule} from '@angular/material/table'
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { PaymentMethodCreateComponent } from './component/paymentMethod/payment-
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
